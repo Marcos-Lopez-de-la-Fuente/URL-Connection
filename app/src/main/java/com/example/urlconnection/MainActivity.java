@@ -72,8 +72,8 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String result) {
-            int i = result.indexOf("<p>");
 
+            int i = result.indexOf("<p>");
 
             i += 3;
             String words = "";
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
 
     public String downloadUrl(String myurl) throws IOException {
         InputStream is = null;
-        int len = 50000;
+        int len = 10000;
 
         try {
             URL url = new URL(myurl);
